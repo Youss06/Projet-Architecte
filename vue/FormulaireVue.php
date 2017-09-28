@@ -21,7 +21,7 @@
       <div class="form-group">
         <label for="exampleInputEmail1">Nom du projet</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom Projet">
-        <small id="emailHelp" class="form-text text-muted">Le nom que votre projet devra porter</small>
+        <small id="emailHelp" class="form-text text-muted">Veuillez insérer le nom que votre projet devra porter.</small>
       </div>
 
 
@@ -30,6 +30,14 @@
         <label for="exampleTextarea">Description du projet</label>
         <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
       </div>
+
+      <form class="" action="../modele/dbconnect/db_connect.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Date limite</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Exemple : 7/11/2018">
+          <small id="emailHelp" class="form-text text-muted">Veuillez insérer la date limite pour concevoir votre projet.</small>
+        </div>
+
       <div class="form-group">
         <label for="exampleInputFile">Insérer fichier</label>
         <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
