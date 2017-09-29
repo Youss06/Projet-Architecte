@@ -1,6 +1,6 @@
 <?php
 
-require_once ("../modele/dbconnect/db_connection.php");
+require_once ("../modele/HomeData.php");
 
 if (isset($_POST['send'])) {
  if (isset($_POST['nomProjet']) && isset($_POST['infos']) && isset($_POST['date'])){
