@@ -9,13 +9,13 @@ include("../template/header.php");
 foreach ($getinfo as $key => $select) {
 
 ?>
-  <div class="col-lg-3">
+  <div class="col-lg-4">
     <div class="card">
       <div class="card-block">
         <h3 class="card-title"><?php echo $select['nom_Projet']; ?></h3>
         <p class="card-text"><?php echo $select['infos']; ?></p>
         <p class="card-text"><?php echo $select['date_limite']; ?></p>
-        <a href="Projet.php?detail=<?php echo $select['id']; ?>" class="btn btn-primary">Go somewhere</a>
+        <a href="Projet.php?detail=<?php echo $select['id']; ?>" class="btn btn-primary">Détails</a>
       </div>
     </div>
   </div>
