@@ -2,6 +2,13 @@
 
 include("dbsql.php");
 
+function recup () {
+
+$req = $bdd-> query(SELECT * FROM Projet)
+
+return req;
+}
+
 
 function projet($nomProjet, $infos, $date ){
 global $bdd;
