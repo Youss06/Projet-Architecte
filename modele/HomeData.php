@@ -1,6 +1,6 @@
 <?php
 
-require_once("dbsql.php");
+require_once("dbconnect/dbsql.php");
 
 function recup () {
 global $bdd;

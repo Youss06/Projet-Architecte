@@ -1,24 +1,24 @@
 <?php
-include("../template/header.php")
+include("../vue/template/header.php");
+?>
+<a href="../vue/FormulaireVue.php">Clique pour creer un projet</a>
 
-foreach ($variable as $key => $req) {
+<?php
+foreach ($getinfo as $key => $select) {
 
-
-
-
-}
 ?>
 
+
 <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="..." alt="">
   <div class="card-block">
     <h4 class="card-title"></h4>
     <p class="card-text"></p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><?php echo $req['nom_Projet']; ?></li>
-    <li class="list-group-item"></li>
-    <li class="list-group-item"></li>
+    <li class="list-group-item"><?php echo $select['nom_Projet']; ?></li>
+    <li class="list-group-item"><?php echo $select['infos']; ?></li>
+    <li class="list-group-item"><?php echo $select['date_limite']; ?></li>
   </ul>
   <!-- <div class="card-block">
     <a href="#" class="card-link">Card link</a>
@@ -26,8 +26,6 @@ foreach ($variable as $key => $req) {
   </div> -->
 </div>
 
-
-<!-- <?php
-
-include('footer')
- ?> -->
+<?php
+}
+ ?>

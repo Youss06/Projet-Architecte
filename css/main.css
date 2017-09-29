@@ -2,7 +2,7 @@ body {
   padding:0;
   margin:0;
   font-family:sans-serif;
-  color:white;
+  /*color:white;*/
 }
 
 label {
@@ -26,6 +26,7 @@ header {
 }
 h1, h2 {
   text-align: center;
+  color: white;
 }
 
 @media all and (max-width: 480px) {
