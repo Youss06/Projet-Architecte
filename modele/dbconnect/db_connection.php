@@ -1,10 +1,20 @@
 <?php
-try {
-  $bdd = new PDO('mysql:host=localhost;dbname=ProjetArchitecte;charset=utf8', 'root', 'root');
-} catch (Exception $e) {
-die('Erreur : ' . $e->getMessage());
+
+include("dbsql.php");
+
+
+function projet($nomProjet, $infos, $date ){
+global $bdd;
+  $req = $bdd->prepare('INSERT INTO Projet(nom_Projet, infos, date_limite)
+  VALUES(:nom_Projet, :infos, :date_limite )');
+
+  $req->execute(array(
+    'nom_Projet'=>$nomProjet,
+    'infos'=>$infos,
+    'date_limite'=>$date
+  ));
 }
 
 
 
- ?>
+?>
