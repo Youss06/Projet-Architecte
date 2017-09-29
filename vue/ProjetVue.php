@@ -2,6 +2,9 @@
 
 include("../vue/template/header.php");
 
+foreach ($showProjet as $key => $select) {
+  # code...
+
 // $article = $_GET['id'];
  ?>
 
@@ -16,19 +19,17 @@ include("../vue/template/header.php");
 
         <div class="col lg-4 md-4 xs-4">
 
-                  <h2 id="H2"><?php echo $produit['nom_Projet']; ?></h2><br/ >
+                  <p><?php echo $select['nom_Projet']; ?></p><br/ >
 
-                  <p><?php echo $produit['infos'];?></p>
+                  <p><?php echo $select['infos'];?></p>
                   <br>
-            <p><?php echo $produit['date_limite'];?></p>
+            <p><?php echo $select['date_limite'];?></p>
 
 
 
           </div>
               </div>
             </div>
-
-
 <?php
 }
  ?>
