@@ -20,6 +20,7 @@ foreach ($getinfo as $key => $select) {
     <li class="list-group-item"><?php echo $select['infos']; ?></li>
     <li class="list-group-item"><?php echo $select['date_limite']; ?></li>
   </ul>
+  <a href="Projet.php?detail=<?php echo $select['id']; ?>" class="btn btn-primary tonbou">Detail</a>
   <!-- <div class="card-block">
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
