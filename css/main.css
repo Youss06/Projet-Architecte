@@ -26,12 +26,12 @@ header {
 }
 h1, h2 {
   text-align: center;
-  color: white;
+  color: white !important;
 }
 
 @media all and (max-width: 480px) {
   header {
-    height:70px;
+    height:100px;
     background-color:black;
     font-weight:300;
     font-size:13px;
