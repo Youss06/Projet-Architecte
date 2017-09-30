@@ -11,24 +11,22 @@ foreach ($showProjet as $key => $select) {
 
 
  <div class="container mt-5 mb-5">
-      <div class="row">
-        <div id="produit" class="col lg-6 md-6 xs-6" style="width: 15 rem;">
-            <img class="card-img-top" src= alt="">
-        </div>
+
+   <div class="card text-center">
+     <div class="card-header">
+       <?php echo $select['nom_Projet']; ?></p>
+     </div>
+     <div class="card-block">
+       <h4 class="card-title"><?php echo $select['infos'];?></h4>
+       <!-- <p class="card-text"><?php echo $select['date_limite'];?></p> -->
+       <a href="#" class="btn btn-primary">Ajouter un sous-prjet</a>
+     </div>
+     <div class="card-footer text-muted">
+       <?php echo $select['date_limite'];?>
+     </div>
+   </div>
 
 
-        <div class="col lg-4 md-4 xs-4">
-
-                  <p><?php echo $select['nom_Projet']; ?></p><br/ >
-
-                  <p><?php echo $select['infos'];?></p>
-                  <br>
-            <p><?php echo $select['date_limite'];?></p>
-
-
-
-          </div>
-              </div>
             </div>
 <?php
 }

@@ -9,8 +9,8 @@ include("../template/header.php");
 foreach ($getinfo as $key => $select) {
 
 ?>
-  <div class="col-lg-4">
-    <div class="card">
+  <div  class="col-lg-4">
+    <div style="background-color:rgba(250,250,250,0.4)" class="card">
       <div class="card-block">
         <h3 class="card-title"><?php echo $select['nom_Projet']; ?></h3>
         <p class="card-text"><?php echo $select['infos']; ?></p>
