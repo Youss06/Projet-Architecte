@@ -19,7 +19,7 @@ foreach ($showProjet as $key => $select) {
      <div class="card-block">
        <h4 class="card-title"><?php echo $select['infos'];?></h4>
        <!-- <p class="card-text"><?php echo $select['date_limite'];?></p> -->
-       <a href="#" class="btn btn-primary">Ajouter un sous-prjet</a>
+       <a href="../vue/FormSubStepVue.php" class="btn btn-primary">Ajouter un sous-projet</a>
      </div>
      <div style="background-color:rgba(250,250,250,0.4)" class="card-footer text-muted">
        <?php echo $select['date_limite'];?>
