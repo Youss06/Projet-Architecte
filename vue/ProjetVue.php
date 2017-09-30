@@ -12,8 +12,8 @@ foreach ($showProjet as $key => $select) {
 
  <div class="container mt-5 mb-5">
 
-   <div class="card text-center">
-     <div class="card-header">
+   <div style="background-color:rgba(250,250,250,0.4)" class="card text-center">
+     <div style="background-color:rgba(250,250,250,0.4)" class="card-header">
        <?php echo $select['nom_Projet']; ?></p>
      </div>
      <div class="card-block">
@@ -21,7 +21,7 @@ foreach ($showProjet as $key => $select) {
        <!-- <p class="card-text"><?php echo $select['date_limite'];?></p> -->
        <a href="#" class="btn btn-primary">Ajouter un sous-prjet</a>
      </div>
-     <div class="card-footer text-muted">
+     <div style="background-color:rgba(250,250,250,0.4)" class="card-footer text-muted">
        <?php echo $select['date_limite'];?>
      </div>
    </div>
