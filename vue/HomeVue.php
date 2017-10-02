@@ -1,7 +1,7 @@
 <?php
 include("../template/header.php");
 ?>
-<a href="../vue/FormulaireVue.php">Clique pour creer un projet</a>
+<a href="../vue/FormulaireVue.php">Créer un projet</a>
 <div class="container">
 <div class="row">
 
@@ -16,6 +16,7 @@ foreach ($getinfo as $key => $select) {
         <p class="card-text"><?php echo $select['infos']; ?></p>
         <p class="card-text"><?php echo $select['date_limite']; ?></p>
         <a href="Projet.php?detail=<?php echo $select['id']; ?>" class="btn btn-primary">Détails</a>
+        <a href="Home.php?delete=<?php echo $donnees['id']; ?>" class="btn btn-primary tonbou">Supprimer</a>
       </div>
     </div>
   </div>

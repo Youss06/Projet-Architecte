@@ -19,7 +19,7 @@
 
 
 
-    <form class="" action="../controleur/Home.php" method="post" enctype="multipart/form-data">
+    <form class="" action="" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="exampleInputEmail1">Emplacement du projet</label>
         <input type="text" class="form-control" name="emplacement" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Où se situera votre projet">
