@@ -4,9 +4,22 @@
 require_once('../modele/ProjetData.php');
 
 
-//2 traitement
+//2 traitement et verif
+// if (isset($_GET['detail'])  +  empty['detail']) {
+//
+// }
 $projet = ProjectRecovery($_GET['detail']);
 
+$ShowsubStep = subStep($_GET['detail']);
+
+$reponse = $bdd ->prepare ('SELECT Projet.id, subStep.id
+FROM Projet, subStep
+WHERE Projet.id_projet = subStep.id');
+
+$req2 = $reponse -> fetchAll();
+
+return $req2;
+}
 
 // $projectDelete = deleteProject($_GET['delete']);
  include('../vue/ProjetVue.php');

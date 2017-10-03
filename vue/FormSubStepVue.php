@@ -19,7 +19,7 @@
 
 
 
-    <form class="" action="" method="post" enctype="multipart/form-data">
+    <form class="" action="../controleur/formSubStep.php" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="exampleInputEmail1">Emplacement du projet</label>
         <input type="text" class="form-control" name="emplacement" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Où se situera votre projet">
@@ -33,7 +33,7 @@
         <input type="text" class="form-control" name="nb_piece" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="le nombre de pièce de votre projet">
       </div>
 
-      <form class="" action="" method="post" enctype="multipart/form-data">
+
         <div class="form-group">
           <label for="exampleInputEmail1">Domaine</label>
           <input type="text" class="form-control" id="exampleInputEmail1" name="domaine" aria-describedby="emailHelp" placeholder="Ex: Enseignement, Hospitalier...">

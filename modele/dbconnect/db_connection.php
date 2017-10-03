@@ -23,6 +23,20 @@ global $bdd;
   ));
 }
 
+// fonction insert formulaire sous-etapes
+
+
+
+function sendSubStep($emplacement, $nb_piece, $domaine ){
+global $bdd;
+  $req = $bdd->prepare('INSERT INTO subStep(emplacement, nb_piece, domaine)
+  VALUES(:emplacement, :nb_piece, :domaine)');
+  $req->execute(array(
+    'emplacement'=>$emplacement,
+    'nb_piece'=>$nb_piece,
+    'domaine'=>$domaine
+  ));
+
 
 
 ?>

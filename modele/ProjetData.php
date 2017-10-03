@@ -14,13 +14,14 @@ return $select;
 
 // require_once("dbconnect/dbsql.php");
 //
-// function subStep(){
-//   global $bdd;
-//   $req = $bdd-> prepare('SELECT * FROM subStep');
-//   $req->execute();
-//   $select = $req->fetchAll();
-//   return $select;
-// }
+function subStep($supstepRecup){
+  global $bdd;
+  $req = $bdd-> prepare('SELECT * FROM subStep');
+  $req->execute(array(
+  ));
+  $select = $req->fetch();
+  return $select;
+}
 
 
 function sendSubStep($emplacement, $nb_piece, $domaine ){
@@ -33,7 +34,7 @@ global $bdd;
     'domaine'=>$domaine
   ));
 
-  var_dump($emplacement);
+
 }
 
  ?>
