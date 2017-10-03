@@ -14,12 +14,7 @@ $ShowsubStep = subStep($_GET['detail']);
 
 $reponse = $bdd ->prepare ('SELECT Projet.id, subStep.id
 FROM Projet, subStep
-WHERE Projet.id_projet = subStep.id');
-
-$req2 = $reponse -> fetchAll();
-
-return $req2;
-}
+WHERE Projet.id = subStep.id');
 
 // $projectDelete = deleteProject($_GET['delete']);
  include('../vue/ProjetVue.php');
